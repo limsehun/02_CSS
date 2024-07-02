@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05_연습문제2</title>
+  <!--CSS 작성 태그-->
+  <style>
+    /*배경색을 aqua로 설정*/    
+    thead{ background-color: aqua;}
+    tbody{background-color: orange;}
+    tfoot{background-color: yellow;}
+
+    /*tbody/tfoot  안에 존재하는 th의 배경색을 orangered로 지정*/
+    tbody th, tfoot th{background-color: orangered;}
+  </style>
+</head>
+<body>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th colspan="5">이용자 리스트</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="5">앱 종류</th>
+        <th>앱 종류</th>
+        <th>다운횟수</th>
+        <th>사용시간</th>
+        <th>수익</th>
+      </tr>
+       <tr>
+        <td>크롬</td>
+        <td>123,456</td>
+        <td>200,000시간</td>
+        <td>852억</td>
+      </tr> 
+      <tr>
+        <td>유튜브</td>
+        <td>2,145,622</td>
+        <td>32145621시간</td>
+        <td>1700억</td>
+      </tr> 
+      <tr>
+        <td>구글 드라이브</td>
+        <td>214896회</td>
+        <td>32455시간</td>
+        <td>23억</td>
+      </tr> 
+      <tr>
+        <td>구글번역기</td>
+        <td>4123회</td>
+        <td>21478962145896시간</td>
+        <td>1억</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3">총합</th>
+        <td>1,420,000시간</td>
+        <td>221,478,994,523,972</td>
+      </tr>
+    </tfoot>
+ 
+
+  </table>
+  
+</body>
+</html>

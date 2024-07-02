@@ -1,0 +1,58 @@
+.flex-container{
+
+  /* 
+  viewport : 현재 하면에 보여지고 있는 영역
+             (현재 기기, 브라우저)
+
+  vw (Viewport Hidth) : 현재 화면의 넓이 비례
+                        (100vw == 화면너비100%)
+
+  vh (Viewport Height) : 현재 화면의 높이 비례
+                         (100vh == 화면높이100%)
+  */
+  height: 75vh;
+
+  margin: 30px 20px;
+  background-color: aquamarine;
+
+  /* 내부 요소를 유연하게 배치하기 위해
+  감싸는 요소를 Flex container로 지정 */
+  display: flex;
+
+  /* flex-wrap : item이 한 줄/여러 줄로 배치 되게 지정 */
+
+  /* 기본값 */
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+
+
+  /* flex-flow :  flex-direction  +  flex-wrap; 
+  두 속성을 한번에 작성하는 속성*/
+
+  /* flex-flow: column nowrap; */
+  /* flex-flow: column wrap; */
+  /* flex-flow: column-reverse wrap-reverse; */
+
+
+  /* align-content : 
+    cross axis(교차축)을 기준으로 
+    포장된(wrap) item들을 정렬 
+    (교차축 방향 item묶음(wrap)정렬)
+    
+    사용 가능한 속성 값은
+    justify-content(중심축 item 방향 정렬) 와 동일하다
+    */
+
+justify-content: center;
+
+/* align-content: flex-start; */
+/* align-content: flex-end; */
+/* align-content: center; */
+/* align-content: space-around; */
+/* align-content: space-evenly; */
+/* align-content: space-between */
+;
+
+
+}

@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+  }
+  
+ /* div, header, main, footer, section {border: 1px solid black;}*/
+  
+  /* body 태그에 flex 설정
+    == 화면을 나누는 큰 영역을 유연하게 배치
+  */
+  body{ display: flex;
+    flex-direction: column;
+    /* 최소 높이 : 화면 높이 100% */
+    min-height: 100vh; }
+    
+    
+    /* 헤더 */
+    
+    header{
+      height: 60px;
+      display: flex;
+      font-family: 굴림;
+    }
+
+    .header-1{width: 87px;}
+    .header-2{width: 52px;}
+    .header-3{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+       }
+      
+
+
+    
+    main{
+      background-color: #ccc;
+      /* 팽창 (기본 값 : 0) */
+      /* 나머지 item이 0,
+       main 혼자 1 -> 혼자 늘어나서 남은 화면 다 채움 */
+       flex-grow: 1;
+       display: flex;
+       flex-direction:column;
+    }
+    .content-1{
+      height: 290px; 
+      display: flex;
+      align-items: center;
+      align-self: center;
+      font-size: 80px;
+      font-weight: bold;
+      font-family: 고딕;
+      div[name=b]{color: #3572EF;}
+      div[name=r]{color: #EE4E4E;}
+      div[name=y]{color: #f2db33;}
+      div[name=g]{color: rgb(78, 150, 78);}
+    }
+  
+
+
+    .content-2{
+      border: 1px solid black;
+      height: 50px; 
+      width: 50%;
+      flex-direction:row;
+      align-self: center;
+      border-radius: 4px;
+      }
+    .content-2>button[id=검색]{
+      display: flex;
+    }
+    .content-3{flex-grow: 1;}
+    
+    
+    /* 푸터 부분 */
+    footer{
+      height: 100px;
+    }
+    
+    footer > section{ height: 50%; }*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
